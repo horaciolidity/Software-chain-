@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Chain - Soluciones de Punto de Venta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background-color: #0b3d91;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #114aad;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      width: 280px;
+      padding: 15px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    button.contact-btn {
+      background-color: #0b3d91;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    button.contact-btn:hover {
+      background-color: #082d70;
+    }
+    footer {
+      background-color: #0b3d91;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Software Chain</h1>
+  <p>Soluciones Integrales de Punto de Venta para Todo Tipo de Negocios</p>
+</header>
+
+<nav>
+  <a href="#">Inicio</a>
+  <a href="#productos">Productos</a>
+  <a href="#clientes">Clientes</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<div class="container">
+  <section id="productos">
+    <h2>Productos destacados</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://via.placeholder.com/280x180" alt="POS para Supermercados">
+        <h3>POS Supermercados</h3>
+        <p>Sistema robusto para ventas rápidas y control de stock efectivo.</p>
+        <button class="contact-btn">Solicitar Demo</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/280x180" alt="POS para Hoteles">
+        <h3>POS Hoteles</h3>
+        <p>Gestiona reservaciones, pagos y facturación desde un único sistema.</p>
+        <button class="contact-btn">Solicitar Demo</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/280x180" alt="POS para Ferreterías">
+        <h3>POS Ferreterías</h3>
+        <p>Administra inventario complejo y facilita la atención al cliente.</p>
+        <button class="contact-btn">Solicitar Demo</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="clientes">
+    <h2>Empresas que confían en nosotros</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Almacenes Mendoza</h3>
+        <p>"Eficiencia y control absoluto desde que implementamos Software Chain."</p>
+      </div>
+      <div class="card">
+        <h3>Ferretería Central</h3>
+        <p>"Excelente sistema, nos ayudó a optimizar nuestro inventario rápidamente."</p>
+      </div>
+      <div class="card">
+        <h3>Hotel Paradise</h3>
+        <p>"Simplificó significativamente nuestra administración hotelera."</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Nombre" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+      <input type="email" id="email" placeholder="Email" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+      <textarea id="message" placeholder="Mensaje" required style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea>
+      <button type="submit" class="contact-btn">Enviar Mensaje</button>
+    </form>
+  </section>
+</div>
+
+<footer>
+  © 2025 Software Chain. Todos los derechos reservados.
+</footer>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Mensaje enviado con éxito. Te contactaremos pronto.');
+    e.target.reset();
+  });
+</script>
+
+</body>
+</html>
